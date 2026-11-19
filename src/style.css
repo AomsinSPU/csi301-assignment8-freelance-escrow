@@ -1,0 +1,380 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font:
+    16px/1.55 "IBM Plex Sans Thai",
+    sans-serif;
+  color: #172b4d;
+  background: #f5f7fa;
+}
+a {
+  color: #174ea6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  background: #152e4b;
+  color: white;
+}
+.bar,
+main {
+  max-width: 1184px;
+  margin: auto;
+  padding: 0 32px;
+}
+.bar,
+.row,
+.heading,
+.subtitle,
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.bar {
+  min-height: 68px;
+}
+.brand {
+  font-size: 21px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+.brand b {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  background: #b5d4ff;
+  color: #152e4b;
+  border-radius: 7px;
+  margin-right: 6px;
+}
+nav a {
+  color: #dbe7f7;
+  padding: 19px 4px;
+  border-bottom: 3px solid transparent;
+}
+nav a[aria-current] {
+  border-color: #a5caff;
+  color: white;
+}
+.network {
+  margin-left: auto;
+  color: #c6eddf;
+  font-size: 14px;
+}
+.bar button {
+  color: white;
+  background: #29445e;
+  border: 0;
+}
+.bar button,
+.token {
+  white-space: nowrap;
+}
+main {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.heading,
+.row {
+  justify-content: space-between;
+}
+.heading {
+  margin-bottom: 24px;
+}
+.eyebrow,
+.crumb,
+small,
+dt,
+.subtitle {
+  color: #526880;
+}
+.eyebrow,
+.crumb {
+  margin: 0 0 10px;
+}
+h1 {
+  font-size: clamp(32px, 4vw, 44px);
+  line-height: 1.2;
+  margin: 14px 0;
+}
+h2 {
+  font-size: 21px;
+  margin: 0 0 14px;
+}
+h3 {
+  margin: 3px 0;
+}
+.subtitle {
+  margin: 12px 0 24px;
+}
+.card {
+  background: white;
+  border: 1px solid #dce3ec;
+  border-radius: 14px;
+  padding: 24px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.layout .card,
+.layout {
+  margin-bottom: 16px;
+}
+.amount {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.amount small {
+  font-size: 21px;
+  font-weight: 400;
+}
+.badge {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: #41546a;
+  background: #edf0f4;
+}
+.s1 {
+  background: #e3efff;
+  color: #174586;
+}
+.s2 {
+  background: #fff1cf;
+  color: #815014;
+}
+.s3 {
+  background: #eee3ff;
+  color: #6c3592;
+}
+.s4,
+.s5 {
+  background: #e1f4e8;
+  color: #205f40;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+button,
+.primary,
+select {
+  cursor: pointer;
+  border: 1px solid #ced8e3;
+  background: white;
+  color: #174ea6;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.primary {
+  display: inline-block;
+  background: #174ea6;
+  color: white;
+  border-color: #174ea6;
+  font-weight: 600;
+  text-align: center;
+}
+.primary:hover {
+  background: #123f88;
+  text-decoration: none;
+}
+button:disabled {
+  opacity: 0.52;
+  cursor: default;
+}
+.secondary,
+.token {
+  border: 0;
+  background: transparent;
+  padding: 4px 0;
+}
+.token,
+code {
+  font-family: monospace;
+  font-size: 14px;
+}
+.token {
+  color: #174ea6;
+}
+.jobrow,
+.event {
+  display: grid;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-top: 1px solid #dce3ec;
+}
+.jobrow {
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  color: inherit;
+}
+.event {
+  grid-template-columns: minmax(0, 1.4fr) 1fr auto;
+}
+.event p {
+  margin: 3px 0;
+}
+.event small,
+aside small,
+.form small {
+  display: block;
+}
+aside button:not(.token) {
+  width: 100%;
+  margin-top: 12px;
+}
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 20px;
+  border-top: 1px solid #dce3ec;
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+dd {
+  margin: 0;
+}
+.form {
+  max-width: 680px;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0;
+}
+input,
+textarea,
+label select {
+  display: block;
+  width: 100%;
+  border: 1px solid #aabacb;
+  border-radius: 7px;
+  padding: 10px;
+  color: inherit;
+  margin-top: 5px;
+}
+textarea {
+  min-height: 82px;
+}
+.notice {
+  background: #edf3ff;
+  border: 1px solid #b9cff1;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+  margin-bottom: 12px;
+}
+dialog[open] {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  margin: auto;
+  width: min(92vw, 450px);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 26px;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 0 0 100vmax #10263bb3;
+  color: inherit;
+}
+dialog code {
+  display: block;
+  overflow-wrap: anywhere;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #5392ef;
+  outline-offset: 2px;
+}
+@media (max-width: 720px) {
+  .bar,
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .bar {
+    flex-wrap: wrap;
+    padding-block: 10px;
+    gap: 8px;
+  }
+  .brand {
+    font-size: 17px;
+  }
+  .bar button {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .network {
+    font-size: 12px;
+  }
+  nav {
+    order: 4;
+    width: 100%;
+    gap: 20px;
+  }
+  nav a {
+    padding: 3px 0;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .layout aside {
+    grid-row: 1;
+  }
+  .card {
+    padding: 18px;
+  }
+  .heading {
+    flex-wrap: wrap;
+  }
+  .jobrow,
+  .event {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .jobrow .badge {
+    justify-self: start;
+  }
+  dl {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  dd {
+    margin-bottom: 9px;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .event small {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.filters,.deadline,.presets {display:flex;flex-wrap:wrap;align-items:end;gap:12px}
+.filters {margin-bottom:24px}.filters label,.deadline label {flex:1 1 155px;min-width:0;margin:0}
+.filters label:first-child {flex:2 1 230px}
+.filters input,.filters select,.presets button,.filters button,.form input,.form button {min-height:44px}
+.form fieldset {min-width:0;border:1px solid #ced8e3;border-radius:10px;padding:16px;margin:20px 0}
+.form legend {font-weight:600;padding:0 6px}.presets {margin-bottom:12px}
+@media(max-width:600px){.filters,.deadline{display:grid;grid-template-columns:1fr}.presets{gap:6px}.presets button{flex:1;padding:6px}.form .primary{width:100%}}
