@@ -114,7 +114,7 @@ function App() {
         ).then((r) => r.json());
         if (!live) return;
         if (cfg.chainId !== 11155111) throw Error("ต้องใช้ Sepolia");
-        p ??= new JsonRpcProvider(cfg.rpc);
+        p ??= new JsonRpcProvider(cfg.rpc, undefined, { batchMaxCount: 1 });
         if (Number((await p.getNetwork()).chainId) !== cfg.chainId)
           throw Error("RPC ไม่ตรงเครือข่าย");
         const result = await readChain(p, cfg);

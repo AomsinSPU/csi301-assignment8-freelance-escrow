@@ -1,7 +1,7 @@
 {
   "name": "Sepolia",
   "chainId": 11155111,
-  "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+  "rpc": "https://sepolia.gateway.tenderly.co",
   "address": "0x47aAdDBCB8dEB9f776E8510c44F1D28CceB07180",
   "block": 12160891,
   "explorer": "https://sepolia.etherscan.io",
